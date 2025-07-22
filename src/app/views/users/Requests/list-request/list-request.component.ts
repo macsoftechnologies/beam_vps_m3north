@@ -520,7 +520,8 @@ export class ListRequestComponent implements OnInit {
 
   private setupFilterListeners(): void {
     this.RequestlistForm.get('Building')?.valueChanges.subscribe(buildingIds => {
-      this.updateFilters(buildingIds, this.RequestlistForm.get('Level')?.value);
+        this.RequestlistForm.get('Level')?.setValue([], { emitEvent: false });
+        this.updateFilters(buildingIds, []);
     });
     
     this.RequestlistForm.get('Level')?.valueChanges.subscribe(levels => {
@@ -539,29 +540,33 @@ export class ListRequestComponent implements OnInit {
 
   private filterFloors(buildingIds: number[]): string[] {
     if (!buildingIds || buildingIds.length === 0) {
-      return [...new Set(this.allFloors.map(f => f.floorName))];
+        return [...new Set(this.allFloors.map(f => f.floorName))];
     }
     
-    // Get unique floorNames for selected buildings
+    const numericBuildingIds = buildingIds.map(id => Number(id));
+    
     return [
-      ...new Set(
-        this.allFloors
-          .filter(f => buildingIds.includes(f.buildingId))
-          .map(f => f.floorName)
-      )
+        ...new Set(
+            this.allFloors
+                .filter(f => numericBuildingIds.includes(Number(f.buildingId)))
+                .map(f => f.floorName)
+        )
     ];
-  }
+}
 
-   private filterRooms(buildingIds: number[], levels: string[]): RoomGroup[] {
-    console.log("levels", levels);
+private filterRooms(buildingIds: number[], levels: string[]): RoomGroup[] {
+    const numericBuildingIds = buildingIds?.map(id => Number(id)) || [];
+    
     return this.allRooms.filter(room => {
-      const buildingMatch = buildingIds.length === 0 || 
-                          buildingIds.includes(room.buildingId);
-      const levelMatch = levels.length === 0 || 
-                       levels.includes(room.planType);
-      return buildingMatch && levelMatch;
+        const buildingMatch = numericBuildingIds.length === 0 || 
+                            numericBuildingIds.includes(Number(room.buildingId));
+        
+        const levelMatch = levels.length === 0 || 
+                         levels.includes(room.planType);
+        
+        return buildingMatch && levelMatch;
     });
-  }
+}
 
   private resetFilters(): void {
     this.filteredFloors = [...new Set(this.allFloors.map(f => f.floorName))];
