@@ -15,6 +15,7 @@ import { MatDialogRef, MatDialog } from '@angular/material/dialog';
 import { ListPopupComponent } from '../Requests/list-popup/list-popup.component';
 import { config } from 'config';
 import { MatSnackBar } from '@angular/material/snack-bar';
+import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 interface Building {
   buildingId: number;
   building_name: string;
@@ -144,13 +145,15 @@ export class PlansComponent implements OnInit {
   private allRooms: RoomGroup[] = [];
   private allFloors: { buildingId: number; floorName: string }[] = [];
 
+  gridCols = 2;
+
   constructor(private fb: FormBuilder, private userservices: UserService,
     private route: Router,public ete: ExportExcelService,
     private subcontrservice: SubcontractorService,
     private requestservice: RequestService,
     private requstservice: RequestService, private http: HttpClient,
-    private dialog: MatDialog, 
-    private _snackBar: MatSnackBar, 
+    private dialog: MatDialog,
+    private _snackBar: MatSnackBar, private breakpointObserver: BreakpointObserver,
     private datePipe: DatePipe) {
     const currentYear = new Date(config.Denmarktz).getFullYear();
     this.minDate = new Date(currentYear - 20, 0, 1);
@@ -174,6 +177,29 @@ export class PlansComponent implements OnInit {
   // getRooms: string[] = [];
 
   ngOnInit(): void {
+
+      this.breakpointObserver.observe(['(max-width: 599px)']) // 👈 custom mobile-only query
+      .subscribe(result => {
+        this.gridCols = result.matches ? 1 : 2;
+      });
+   
+    this.breakpointObserver.observe([
+      Breakpoints.XSmall,
+      Breakpoints.Small,
+      Breakpoints.Medium,
+      Breakpoints.Large,
+    ]).subscribe(result => {
+      if (result.breakpoints[Breakpoints.XSmall]) {
+        this.gridCols = 1; // Single column for extra small screens
+      } else if (result.breakpoints[Breakpoints.Small]) {
+        this.gridCols = 2; // Two columns for small screens
+      } else if (result.breakpoints[Breakpoints.Medium]) {
+        this.gridCols = 2; // Three columns for medium screens
+      } else if (result.breakpoints[Breakpoints.Large]) {
+        this.gridCols = 2; // Four columns for large screens
+      }
+    });
+
     this.PlanForm = this.fb.group({
       Date: [''],
       Year: [''],
