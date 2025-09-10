@@ -1,5 +1,6 @@
 
 export class RequestDto {
+    username: string;
     work_type: string;
     pressure_pneumatic: string;
     pressure_hydrostatic: string;
@@ -198,6 +199,7 @@ export class FilesRequestDto {
 }
 
 export class EditRequestDto {
+    fields: string;
     work_type: string;
     pressure_pneumatic: string;
     pressure_hydrostatic: string;
