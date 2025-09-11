@@ -3328,6 +3328,7 @@ private groupByModule(data: any[], displayProperty: string): any[] {
       this.RequestForm.get(`${control}`).markAsTouched();
     });
     if(this.RequestForm.valid) {
+      this.Requestdata.Request_status = "Draft";
     this.CreateRequest();
     } else {
       this.openSnackBar("Invalid form please check once.");
