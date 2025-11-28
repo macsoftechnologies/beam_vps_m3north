@@ -850,7 +850,7 @@ canOpen() {
         if (res.status == 200) {
           this.openSnackBar("Request Status Updated Successfully");
           this.spinner = false;
-          window.location.reload();
+          // window.location.reload();
           this.ngOnInit();
         }
       },
@@ -912,7 +912,7 @@ canOpen() {
         if (res.status == 200) {
           this.openSnackBar("Request Status Updated Successfully");
           this.spinner = false;
-          window.location.reload();
+          // window.location.reload();
           this.ngOnInit();
         }
       },
