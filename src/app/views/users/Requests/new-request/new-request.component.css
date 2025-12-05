@@ -5159,17 +5159,17 @@ input {
 
 .firstseventyB {
   position: absolute;
-  top: 27.5%;
-  left: 21%;
+  bottom: 27%;
+  right: 24%;
+  height: 14%;
+  width: 7%;
   z-index: 9999;
-  height: 7.4%;
-  width: 11%;
   padding: 0px;
 }
 
 .firstseventyC {
   position: absolute;
-  top: 18.5%;
+  bottom: 21%;
   right: 24%;
   z-index: 9999;
   height: 6%;
