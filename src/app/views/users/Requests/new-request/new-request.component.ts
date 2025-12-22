@@ -1707,7 +1707,7 @@ export class NewRequestComponent implements OnInit {
       floatLabel18: ['', Validators.required],
       floatLabel19: ['', Validators.required],
       floatLabel20: ['', Validators.required],
-      floatLabel21: ['', Validators.required],
+      // floatLabel21: ['', Validators.required],
       floatLabel22: ['', Validators.required],
       floatLabel23: ['', ],
 
@@ -3533,7 +3533,7 @@ private groupByModule(data: any[], displayProperty: string): any[] {
     this.Requestdata.de_energized = this.RequestForm.controls["floatLabel18"].value;
     this.Requestdata.if_no_loto = this.RequestForm.controls["floatLabel19"].value;
     this.Requestdata.do_risk_assessment = this.RequestForm.controls["floatLabel20"].value;
-    this.Requestdata.if_yes_loto = this.RequestForm.controls["floatLabel21"].value;
+    // this.Requestdata.if_yes_loto = this.RequestForm.controls["floatLabel21"].value;
     this.Requestdata.electricity_have_isulation = this.RequestForm.controls["floatLabel22"].value;
   //   this.Requestdata.electricity_have_isulation = this.RequestForm.controls["floatLabel22"].value?.toString().trim() === "" 
   // ? 0 
@@ -3910,7 +3910,7 @@ showMechanicalWorks(): boolean {
     this.Requestdata.de_energized = this.RequestForm.controls["floatLabel18"].value || 0;
     this.Requestdata.if_no_loto = this.RequestForm.controls["floatLabel19"].value || 0;
     this.Requestdata.do_risk_assessment = this.RequestForm.controls["floatLabel20"].value || 0;
-    this.Requestdata.if_yes_loto = this.RequestForm.controls["floatLabel21"].value || 0;
+    // this.Requestdata.if_yes_loto = this.RequestForm.controls["floatLabel21"].value || 0;
     this.Requestdata.electricity_have_isulation = this.RequestForm.controls["floatLabel22"].value || 0;
     this.Requestdata.electrician_certification = this.RequestForm.controls["floatLabel23"].value || 0;
 
@@ -4607,7 +4607,7 @@ private logFieldChanges(previousData: any, currentData: any): any[] {
       this.updaterequestdata.de_energized = this.RequestForm.controls["floatLabel18"].value;
       this.updaterequestdata.if_no_loto = this.RequestForm.controls["floatLabel19"].value;
       this.updaterequestdata.do_risk_assessment = this.RequestForm.controls["floatLabel20"].value;
-      this.updaterequestdata.if_yes_loto = this.RequestForm.controls["floatLabel21"].value;
+      // this.updaterequestdata.if_yes_loto = this.RequestForm.controls["floatLabel21"].value;
       this.updaterequestdata.electricity_have_isulation = this.RequestForm.controls["floatLabel22"].value;
       this.updaterequestdata.electrician_certification = this.RequestForm.controls["floatLabel23"].value;
 
@@ -5352,7 +5352,7 @@ private logFieldChanges(previousData: any, currentData: any): any[] {
       this.updaterequestdata.de_energized = this.RequestForm.controls["floatLabel18"].value;
       this.updaterequestdata.if_no_loto = this.RequestForm.controls["floatLabel19"].value;
       this.updaterequestdata.do_risk_assessment = this.RequestForm.controls["floatLabel20"].value;
-      this.updaterequestdata.if_yes_loto = this.RequestForm.controls["floatLabel21"].value;
+      // this.updaterequestdata.if_yes_loto = this.RequestForm.controls["floatLabel21"].value;
       this.updaterequestdata.electricity_have_isulation = this.RequestForm.controls["floatLabel22"].value;
       this.updaterequestdata.electrician_certification = this.RequestForm.controls["floatLabel23"].value;
 
@@ -6985,7 +6985,7 @@ updateDependentValidators() {
         this.RequestForm.get('floatLabel18').setValidators([Validators.required]);
         this.RequestForm.get('floatLabel19').setValidators([Validators.required]);
         this.RequestForm.get('floatLabel20').setValidators([Validators.required]);
-        this.RequestForm.get('floatLabel21').setValidators([Validators.required]);
+        // this.RequestForm.get('floatLabel21').setValidators([Validators.required]);
         this.RequestForm.get('floatLabel22').setValidators([Validators.required]);
         // this.RequestForm.get('floatLabel23').setValidators([Validators.required]);
       } else if (control == 'Working with Hazardous Substances/Chemicals') {
@@ -7102,7 +7102,7 @@ updateDependentValidators() {
         this.RequestForm.get('floatLabel18').clearValidators();
         this.RequestForm.get('floatLabel19').clearValidators();
         this.RequestForm.get('floatLabel20').clearValidators();
-        this.RequestForm.get('floatLabel21').clearValidators();
+        // this.RequestForm.get('floatLabel21').clearValidators();
         this.RequestForm.get('floatLabel22').clearValidators();
         // this.RequestForm.get('floatLabel23').clearValidators();
       } else if (control == 'Working with Hazardous Substances/Chemicals') {
