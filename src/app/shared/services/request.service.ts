@@ -3659,10 +3659,15 @@ export class RequestService {
             floorName: 'MU91.0F',
             zoneSubList: [
                      {
-                    value: 'MU91.0F',
-                    className: "MU91-zoneMU91_0F-1",
-                    isSelected: false
-                  }
+                    value: 'MU91.0F.A',
+          className: "MU91-zoneMU91_0F-1",
+          isSelected: false
+        },
+        {
+          value: 'MU91.0F.B',
+          className: "MU91-zoneMU91_0F-2",
+          isSelected: false
+        }
             ]
           },
           {
@@ -3891,10 +3896,15 @@ export class RequestService {
             floorName: 'MU91.1F',
             zoneSubList: [
               {
-                value: 'MU91.1F',
-                className: "MU91-zoneMU91_1F-1",
-                isSelected: false
-              }
+          value: 'MU91.1F.A',
+          className: "MU91-zoneMU91_1F-1",
+          isSelected: false
+        },
+        {
+          value: 'MU91.1F.B',
+          className: "MU91-zoneMU91_1F-2",
+          isSelected: false
+        }
             ]
           },
           {
@@ -3997,10 +4007,15 @@ export class RequestService {
             floorName: 'SecondFloor',
             zoneSubList: [
               {
-                value: 'MU91.2F',
-                className: "MU91-zoneMU91_2F-1",
-                isSelected: false
-              }
+          value: 'MU91.2F.A',
+          className: "MU91-zoneMU91_2F-1",
+          isSelected: false
+        },
+        {
+          value: 'MU91.2F.B',
+          className: "MU91-zoneMU91_2F-2",
+          isSelected: false
+        }
             ]
           },
         ]
@@ -4013,10 +4028,15 @@ export class RequestService {
             floorName: 'ThirdFloor',
             zoneSubList: [
               {
-                value: 'MU91.3F',
-                className: "MU91-zoneMU91_3F-1",
-                isSelected: false
-              }
+          value: 'MU91.3F.A',
+          className: "MU91-zoneMU91_3F-1",
+          isSelected: false
+        },
+        {
+          value: 'MU91.3F.B',
+          className: "MU91-zoneMU91_3F-2",
+          isSelected: false
+        }
             ]
           },
         ]
@@ -4029,10 +4049,15 @@ export class RequestService {
             floorName: 'FourthFloor',
             zoneSubList: [
               {
-                value: 'MU91.4F',
-                className: "MU91-zoneMU91_4F-1",
-                isSelected: false
-              }
+          value: 'MU91.4F.A',
+          className: "MU91-zoneMU91_4F-1",
+          isSelected: false
+        },
+        {
+          value: 'MU91.4F.B',
+          className: "MU91-zoneMU91_4F-2",
+          isSelected: false
+        }
             ]
           },
         ]
@@ -13269,10 +13294,15 @@ export class RequestService {
             floorName: 'MU91.0F',
             zoneSubList: [
                      {
-                    value: 'MU91.0F',
-                    className: "MU91-zoneMU91_0F-1",
-                    isSelected: false
-                  }
+                    value: 'MU91.0F.A',
+          className: "MU91-zoneMU91_0F-1",
+          isSelected: false
+        },
+        {
+          value: 'MU91.0F.B',
+          className: "MU91-zoneMU91_0F-2",
+          isSelected: false
+        }
             ]
           },
           {
@@ -13499,10 +13529,15 @@ export class RequestService {
             floorName: 'MU91.1F',
             zoneSubList: [
               {
-                value: 'MU91.1F',
-                className: "MU91-zoneMU91_1F-1",
-                isSelected: false
-              }
+          value: 'MU91.1F.A',
+          className: "MU91-zoneMU91_1F-1",
+          isSelected: false
+        },
+        {
+          value: 'MU91.1F.B',
+          className: "MU91-zoneMU91_1F-2",
+          isSelected: false
+        }
             ]
           },
           {
@@ -13604,10 +13639,15 @@ export class RequestService {
             floorName: 'SecondFloor',
             zoneSubList: [
               {
-                value: 'MU91.2F',
-                className: "MU91-zoneMU91_2F-1",
-                isSelected: false
-              }
+          value: 'MU91.2F.A',
+          className: "MU91-zoneMU91_2F-1",
+          isSelected: false
+        },
+        {
+          value: 'MU91.2F.B',
+          className: "MU91-zoneMU91_2F-2",
+          isSelected: false
+        }
             ]
           },
         ]
@@ -13619,10 +13659,15 @@ export class RequestService {
             floorName: 'ThirdFloor',
             zoneSubList: [
               {
-                value: 'MU91.3F',
-                className: "MU91-zoneMU91_3F-1",
-                isSelected: false
-              }
+          value: 'MU91.3F.A',
+          className: "MU91-zoneMU91_3F-1",
+          isSelected: false
+        },
+        {
+          value: 'MU91.3F.B',
+          className: "MU91-zoneMU91_3F-2",
+          isSelected: false
+        }
             ]
           },
         ]
@@ -13634,10 +13679,15 @@ export class RequestService {
             floorName: 'FourthFloor',
             zoneSubList: [
               {
-                value: 'MU91.4F',
-                className: "MU91-zoneMU91_4F-1",
-                isSelected: false
-              }
+          value: 'MU91.4F.A',
+          className: "MU91-zoneMU91_4F-1",
+          isSelected: false
+        },
+        {
+          value: 'MU91.4F.B',
+          className: "MU91-zoneMU91_4F-2",
+          isSelected: false
+        }
             ]
           },
         ]

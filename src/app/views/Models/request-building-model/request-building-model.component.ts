@@ -4172,8 +4172,13 @@ loadingZones: Set<string> = new Set();
     else if (this.data.floor.name == 'MU91.0F' && this.data.floor.planType == 'MU91.0') {
       this.floorBlock = [
         {
-          value: 'MU91.0F',
+          value: 'MU91.0F.A',
           className: "MU91-zoneMU91_0F-1",
+          isSelected: false
+        },
+        {
+          value: 'MU91.0F.B',
+          className: "MU91-zoneMU91_0F-2",
           isSelected: false
         }
       ]
@@ -4474,8 +4479,13 @@ loadingZones: Set<string> = new Set();
     else if (this.data.floor.name == 'MU91.1F' && this.data.floor.planType == 'MU91.1') {
       this.floorBlock = [
         {
-          value: 'MU91.1F',
+          value: 'MU91.1F.A',
           className: "MU91-zoneMU91_1F-1",
+          isSelected: false
+        },
+        {
+          value: 'MU91.1F.B',
+          className: "MU91-zoneMU91_1F-2",
           isSelected: false
         }
       ]
@@ -4874,8 +4884,13 @@ loadingZones: Set<string> = new Set();
     else if (this.data.floor.name == 'SecondFloor' && this.data.floor.planType == 'MU91.2') {
       this.floorBlock = [
         {
-          value: 'MU91.2F',
+          value: 'MU91.2F.A',
           className: "MU91-zoneMU91_2F-1",
+          isSelected: false
+        },
+        {
+          value: 'MU91.2F.B',
+          className: "MU91-zoneMU91_2F-2",
           isSelected: false
         }
       ]
@@ -4889,8 +4904,13 @@ loadingZones: Set<string> = new Set();
     else if (this.data.floor.name == 'ThirdFloor' && this.data.floor.planType == 'MU91.3') {
       this.floorBlock = [
         {
-          value: 'MU91.3F',
+          value: 'MU91.3F.A',
           className: "MU91-zoneMU91_3F-1",
+          isSelected: false
+        },
+        {
+          value: 'MU91.3F.B',
+          className: "MU91-zoneMU91_3F-2",
           isSelected: false
         }
       ]
@@ -4904,8 +4924,13 @@ loadingZones: Set<string> = new Set();
     else if (this.data.floor.name == 'FourthFloor' && this.data.floor.planType == 'MU91.4') {
       this.floorBlock = [
         {
-          value: 'MU91.4F',
+          value: 'MU91.4F.A',
           className: "MU91-zoneMU91_4F-1",
+          isSelected: false
+        },
+        {
+          value: 'MU91.4F.B',
+          className: "MU91-zoneMU91_4F-2",
           isSelected: false
         }
 
