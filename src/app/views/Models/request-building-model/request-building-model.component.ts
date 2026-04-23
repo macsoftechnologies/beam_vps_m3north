@@ -2903,7 +2903,7 @@ loadingZones: Set<string> = new Set();
           isSelected: false
         },
         {
-          value: ' 2.400',
+          value: ' 2.400.0',
           className: "MA-zone40_2A_1-4",
           isSelected: false
         },
@@ -2935,7 +2935,7 @@ loadingZones: Set<string> = new Set();
     else if (this.data.floor.name == '40.2A.3' && this.data.floor.planType == 'Second Floor') {
       this.floorBlock = [
         {
-          value: ' 2.400',
+          value: ' 2.400.00',
           className: "MA-zone40_2A_3-1",
           isSelected: false
         },

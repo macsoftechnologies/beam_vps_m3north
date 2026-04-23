@@ -2556,7 +2556,7 @@ export class RequestService {
                 isSelected: false
               },
               {
-                value: ' 2.400',
+                value: ' 2.400.0',
                 className: "MA-zone40_2A_1-4",
                 isSelected: false
               },
@@ -2578,7 +2578,7 @@ export class RequestService {
             floorName: '40.2A.3',
             zoneSubList: [
               {
-                value: ' 2.400',
+                value: ' 2.400.00',
                 className: "MA-zone40_2A_3-1",
                 isSelected: false
               },
@@ -12198,7 +12198,7 @@ export class RequestService {
                 isSelected: false
               },
               {
-                value: ' 2.400',
+                value: ' 2.400.0',
                 className: "MA-zone40_2A_1-4",
                 isSelected: false
               },
@@ -12220,7 +12220,7 @@ export class RequestService {
             floorName: '40.2A.3',
             zoneSubList: [
               {
-                value: ' 2.400',
+                value: ' 2.400.00',
                 className: "MA-zone40_2A_3-1",
                 isSelected: false
               },
