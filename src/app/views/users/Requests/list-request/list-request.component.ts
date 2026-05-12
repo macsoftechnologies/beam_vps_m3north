@@ -1255,7 +1255,6 @@ onEnterSearch(event: KeyboardEvent) {
 
 const buildingData = this.requestservice.bulidingDataWithIds();
 
-// Match by BOTH buildingId AND planType (Room_Type)
 const matchedBuilding = buildingData.find(
   (b) =>
     Number(b.buildingId) === Number(row['Building_Id']) &&
@@ -1265,7 +1264,9 @@ const matchedBuilding = buildingData.find(
 const matchedZones =
   matchedBuilding?.zoneList
     ?.filter((zone) =>
-      zone.zoneSubList.some((sub) => roomNosArray.includes(sub.value))
+      zone.zoneSubList.some((sub) =>
+        roomNosArray.includes(sub.value.trim())
+      )
     )
     .map((zone) => zone.floorName) || [];
 
