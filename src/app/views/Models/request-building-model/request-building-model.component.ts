@@ -8602,6 +8602,26 @@ loadingZones: Set<string> = new Set();
         }
       }
     }
+    else if (this.data.floor.name == '50.1L' && this.data.floor.planType == 'MA.II 1') {
+      this.floorBlock = [
+         {
+          value: '50.1L-1.544',
+          className: "MA_50_1L-1",
+          isSelected: false
+          },
+          {
+          value: '50.1L-1.544.1',
+          className: "MA_50_1L-2",
+          isSelected: false
+          },
+      ]
+      if (selectedBlockData) {
+        if ((selectedBlockData.floorName == this.data.floor.name) && (selectedBlockData.planType == this.data.floor.planType)) {
+          console.log(selectedBlockData, "2")
+          this.floorBlock = selectedBlockData.selectedBlock; 
+        }
+      }
+    }
     else if (this.data.floor.name == '60.1P' && this.data.floor.planType == 'MA.II 1') {
       this.floorBlock = [
         {

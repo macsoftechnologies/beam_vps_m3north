@@ -6778,6 +6778,21 @@ export class RequestService {
             ]
           },
           {
+            floorName: '50.1L',
+            zoneSubList: [
+                {
+                value: '50.1L-1.544',
+                className: "MA_50_1L-1",
+                isSelected: false
+                },
+                {
+                value: '50.1L-1.544.1',
+                className: "MA_50_1L-2",
+                isSelected: false
+                },
+            ]
+          },
+          {
             floorName: '60.1P',
             zoneSubList: [
                 {
@@ -16396,6 +16411,21 @@ export class RequestService {
                 {
                 value: '50.1K-1.544.2',
                 className: "MA_50_1K-11",
+                isSelected: false
+                },
+            ]
+          },
+          {
+            floorName: '50.1L',
+            zoneSubList: [
+                {
+                value: '50.1L-1.544',
+                className: "MA_50_1L-1",
+                isSelected: false
+                },
+                {
+                value: '50.1L-1.544.1',
+                className: "MA_50_1L-2",
                 isSelected: false
                 },
             ]
